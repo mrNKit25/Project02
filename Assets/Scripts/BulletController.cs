@@ -20,4 +20,13 @@ public class BulletController : MonoBehaviour
         if (Camera.main.WorldToViewportPoint(transform.position).y > 1)
             Destroy(this.gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            GameObject.Destroy(this.gameObject);
+            GameObject.Destroy(collision.gameObject);
+        }
+    }
 }
