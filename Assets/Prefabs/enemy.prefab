@@ -120,6 +120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: -0.25
   bullet: {fileID: 3700782365744361652, guid: 573a6528075584e9ca0fb3c5903475b3, type: 3}
+  timerMin: 5
+  timerMax: 25
+  canFireBullets: 1
 --- !u!61 &-3118315963226811728
 BoxCollider2D:
   m_ObjectHideFlags: 0
