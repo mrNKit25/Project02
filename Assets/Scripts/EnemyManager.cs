@@ -51,7 +51,7 @@ public class EnemyManager : MonoBehaviour
 
         }
 
-        timer += 0.01f;
-        yield return new WaitForSeconds(0.01f);
+        timer += 0.1f;
+        yield return new WaitForSeconds(0.1f);
     }
 }

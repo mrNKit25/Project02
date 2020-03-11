@@ -53,7 +53,7 @@ public class EnemyController : MonoBehaviour
 
         }
 
-        timerBullet += 0.01f;
-        yield return new WaitForSeconds(0.01f);
+        timerBullet += 0.1f;
+        yield return new WaitForSeconds(0.1f);
     }
 }
