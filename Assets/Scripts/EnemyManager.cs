@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour
     private float timer;
     private float maxTimer;
     public GameObject enemy;
+   
 
     public float timerMin = 5f;
     public float timerMax = 12f;
@@ -22,6 +23,7 @@ public class EnemyManager : MonoBehaviour
     void Update()
     {
         StartCoroutine("SpawnEnemyTimer");
+ 
     }
 
     void SpawnEnemy()
@@ -40,6 +42,7 @@ public class EnemyManager : MonoBehaviour
         GameObject.Instantiate(enemy, spawnPoint, new Quaternion(0, 0, 0, 0));
     }
 
+
     IEnumerator SpawnEnemyTimer()
     {
         if(timer >= maxTimer)
@@ -54,4 +57,5 @@ public class EnemyManager : MonoBehaviour
         timer += 0.1f;
         yield return new WaitForSeconds(0.1f);
     }
+
 }
